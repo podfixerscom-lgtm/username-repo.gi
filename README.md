@@ -42,8 +42,9 @@ localized in Bangla and uses BDT (৳); the operations area has a dark theme.
 ## Git-based production deployment
 
 This app needs a Node.js server and PostgreSQL; it cannot run as a static-only
-site. Vercel is the recommended Git deployment target, and other hosts that
-support Next.js 16 and Node.js 20.19 or newer can use the same commands.
+site. GitHub stores the source code but GitHub Pages cannot run the Next.js
+server or connect Prisma to PostgreSQL. Connect this repository to Vercel, or
+another host that supports Next.js 16 and Node.js 20.19 or newer.
 
 1. Push this project to a GitHub, GitLab, or Bitbucket repository. Import that
    repository into Vercel and keep the detected Next.js build settings:
